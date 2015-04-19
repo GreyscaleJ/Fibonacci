@@ -1,19 +1,19 @@
 public class FibonacciUtils {
 
     public static int evenValuesSum() {
-        int firstVal = 1;
-        int secondVal = 1;
+        int previous = 1;
+        int next = 1;
         int sum = 0;
         int limit = 4000000;
 
         while (true) {
-            int temp = secondVal;
-            if ((secondVal += firstVal) > limit) {
+            int temp = next;
+            if ((next += previous) > limit) {
                 break;
-            } else if (secondVal % 2 == 0) {
-                sum += secondVal;
+            } else if (next % 2 == 0) {
+                sum += next;
             }
-            firstVal = temp;
+            previous = temp;
         }
         return sum;
     }
