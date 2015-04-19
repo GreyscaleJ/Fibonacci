@@ -18,6 +18,6 @@ public class FibonacciUtils {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.print(FibonacciUtils.evenValuesSum());
+        System.out.println(FibonacciUtils.evenValuesSum());
     }
 }
